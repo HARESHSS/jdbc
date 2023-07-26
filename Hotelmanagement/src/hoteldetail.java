@@ -49,7 +49,7 @@ public class hoteldetail {
 		pst.executeUpdate(Sql);
 		pst.close();
 	}
-	public void deleteallmenu()throws Exception{
+	public void deleteallmenu()throws Exception{                              //delete
 		String url ="jdbc:mysql://127.0.0.1:3306/Hotel_Management";
 		String name="root";
 		String pass="1007";
