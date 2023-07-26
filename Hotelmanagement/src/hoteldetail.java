@@ -1,6 +1,6 @@
 import java.sql.*;
 public class hoteldetail {
-	public void gettable()throws Exception {
+	public void gettable()throws Exception {                                 //create table
 		String url ="jdbc:mysql://127.0.0.1:3306/Hotel_Management";
 		String name="root";
 		String pass="1007";
@@ -13,7 +13,7 @@ public class hoteldetail {
 				+ "Price INTEGER)";
 		st.executeUpdate(Sql);
 	}
-	public void getmenu()throws Exception{
+	public void getmenu()throws Exception{                                  //giving values to the table
 		String url ="jdbc:mysql://127.0.0.1:3306/Hotel_Management";
 		String name="root";
 		String pass="1007";
@@ -25,7 +25,7 @@ public class hoteldetail {
 		pst.setInt(3,120);
 		pst.executeUpdate();
 	}
-	public void updatemenu()throws Exception{
+	public void updatemenu()throws Exception{                              //update
 		String url ="jdbc:mysql://127.0.0.1:3306/Hotel_Management";
 		String name="root";
 		String pass="1007";
@@ -37,7 +37,7 @@ public class hoteldetail {
 		pst.setInt(3, 5);
 		pst.executeUpdate();
 	}
-	public void deletemenu()throws Exception{
+	public void deletemenu()throws Exception{                             //delete 
 		String url ="jdbc:mysql://127.0.0.1:3306/Hotel_Management";
 		String name="root";
 		String pass="1007";
@@ -59,7 +59,7 @@ public class hoteldetail {
 		pst.executeUpdate();
 		pst.close();
 	}
-	public void selectmenu()throws Exception{
+	public void selectmenu()throws Exception{                                  //View
 		String url ="jdbc:mysql://127.0.0.1:3306/Hotel_Management";
 		String name="root";
 		String pass="1007";
